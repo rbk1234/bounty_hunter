@@ -1,0 +1,20 @@
+default: &default
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: bounty_hunter
+  pool: 5
+  username: postgres
+  password: postgres
+
+development:
+  <<: *default
+  database: bounty_hunter
+
+test:
+  <<: *default
+  database: bounty_hunter_test
+
+production:
+  <<: *default
+  database: bounty_hunter
