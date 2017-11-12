@@ -1,0 +1,46 @@
+
+.row {
+  max-width: none;
+}
+
+// Foundation Column Spacing
+.row .row {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.column, .columns {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+// Foundation tooltips
+.has-tip {
+  cursor: pointer;
+  border-bottom: none;
+  font-weight: normal;
+
+  &.disabled, &:disabled {
+    color: $light-grey;
+    cursor: default;
+  }
+
+  &:hover {
+    border-bottom: none;
+    //color: $light-grey;
+  }
+
+}
+
+span.tooltip {
+  z-index: 20000; // Make it higher than kendo dropdowns
+
+  p {
+    line-height: 1.3;
+  }
+}
+
+// Foundation dropdowns
+.f-dropdown {
+  outline: none;
+}

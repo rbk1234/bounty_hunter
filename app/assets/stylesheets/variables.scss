@@ -1,0 +1,33 @@
+// Colors
+$green:       	#37b619; //rgb(55,182,25)     icon green: #219b0b
+$dark-green:    #2F9C15;
+$orange:      	#f39c12; //rgb(243,156,18)
+$dark-orange:   #CC830F;
+$red:         	#fa3c33; //rgb(250,60,51)
+$purple:        #7D26CD;
+$light-blue:  	#289beb; //rgb(40,155,235)
+$dark-blue:   	#18689f; //rgb(24,104,159)
+$black:       	#181918; //rgb(25,24,25)
+$dark-grey:   	#3f3f3f; //rgb(63,63,63)
+$grey:          #646464; //rgb(100,100,100)
+$light-grey:  	#969696; //rgb(150,150,150)
+$lighter-grey:	#d7d7d7; //rgb(215,215,215)
+$lightest-grey: #eeeeee; //rgb(238,238,238)
+$body-grey:		#efefef; //rgb(239,239,239)
+
+$transparent:   rgba(0,0,0,0);
+
+$radius: 		0.313em; //5px
+
+$element-height:1.750rem; //28px
+
+$font-family: 		"Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
+$font-size-list:	0.813rem; // 13px
+$font-size-inline:	0.675rem; // 10.8px
+$font-size-thead:   0.75rem; // 12px
+$font-size-table:	0.571rem; // 9.1px
+
+$icon-normal:  		$dark-blue;
+$icon-highlighted:  $light-blue;
+$icon-disabled:  	$lighter-grey;

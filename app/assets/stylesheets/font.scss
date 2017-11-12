@@ -1,0 +1,181 @@
+/* ----------------------------------------------- */
+/*
+Heading
+Anchors
+Icon Font Colors
+*/
+/* ----------------------------------------------- */
+
+body{
+  font-family: $font-family;
+  font-weight: 400;
+  background: $body-grey;
+  color: $dark-grey;
+}
+
+table {
+  font-size: $font-size-list;
+
+  thead tr th {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-size: $font-size-thead;
+    color: $dark-grey;
+  }
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6{
+  color: $black;
+  letter-spacing: 0.04em; // Same as Tab titles
+  font-weight: 700;
+}
+
+h1{
+  font-size: 1.500em; // 24px
+}
+
+h2{
+  font-size: 1.375em // 22px
+}
+
+h3{
+  font-size: 1.250em; // 20px
+}
+
+h4{
+  font-size: 1.125em; // 18px;
+}
+
+h5{
+  font-size: 1.0em; // 16px;
+}
+
+h6{
+  font-size: 0.875em; // 14px;
+}
+
+small{
+  font-size: 0.875em;
+}
+
+p{
+  font-size: 0.875rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+
+/* ----------------------------------------------- */
+
+// Links
+a,
+a:link{
+  color: $dark-blue;
+  text-decoration: underline;
+  &.button{
+    text-decoration: none;
+  }
+}
+
+a:visited{
+  text-decoration: none;
+}
+
+a:hover{
+  color: $light-blue;
+}
+
+a.link-warn{
+  color: $red;
+}
+
+a[disabled] {
+  pointer-events: none;
+  color: $light-grey;
+}
+
+/* ----------------------------------------------- */
+
+// Icon Links
+a.fa {
+  color: $icon-normal;
+  text-decoration: none;
+
+  &[disabled] {
+    color: $light-grey;
+  }
+}
+
+.fa.fa-selected {
+  color: $icon-highlighted;
+}
+
+.fa.fa-disabled {
+  color: $icon-disabled;
+}
+
+.fa-color-invisible{
+  color: rgba(0,0,0,0);
+}
+
+.fa-color-green{
+  color: $green!important;
+
+  &.fa-disabled{
+    color: rgba( $green, .4 )!important;
+  }
+}
+
+.fa-color-dark-green{
+  color: $dark-green !important;
+
+  &.fa-disabled{
+    color: rgba( $dark-green, .4 )!important;
+  }
+}
+
+.fa-color-orange{
+  color: $orange;
+
+  &.has-tip:hover {
+    color: $dark-orange;
+  }
+}
+
+.fa-color-light-blue{
+  color: $dark-blue;
+}
+
+.fa-color-lg{
+  color: $light-grey!important;
+  &.fa-disabled{
+    color: rgba( $light-grey, .4 )!important;
+  }
+}
+
+.fa-color-llg {
+  color: $lightest-grey !important;
+}
+
+
+/* ----------------------------------------------- */
+
+// Message types
+
+.message-warn {
+  color: $orange;
+}
+
+.message-error {
+  color: $red;
+}
+
+.message-success {
+  color: $green;
+}
+
+.message-subtext {
+  color: $light-grey;
+}

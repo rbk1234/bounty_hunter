@@ -1,0 +1,112 @@
+
+main{
+  margin: 0 0 0.9375rem 0;
+}
+
+.row-full{
+  width: 100%;
+  max-width: 100%;
+}
+
+.main-content{
+  padding: 0.9375rem;
+  background: #fff;
+}
+
+.remove-bottom-margin {
+  margin-bottom: 0 !important;
+}
+
+.remove-bottom-padding {
+  padding-bottom: 0 !important;
+}
+
+.remove-top-padding {
+  padding-top: 0 !important;
+}
+
+.remove-left-padding {
+  padding-left: 0 !important;
+}
+
+.remove-right-padding {
+  padding-right: 0 !important;
+}
+
+.section-header {
+  p, select {
+    margin: 0;
+  }
+}
+
+.inline-header {
+  display: inline-block;
+}
+
+// Note: The .stretch-div must come AFTER any .shrink-right or .shrink-left divs (even if the .stretch-div will be
+//       on the left). This is because overflow:hidden needs the floated elements to already by instantiated.
+.inline-divs {
+  // The div(s) that will be on the right and only take up their needed space
+  .shrink-right {
+    float: right;
+    margin-left: 1rem;
+  }
+
+  // The div(s) that will be on the left and only take up their needed space
+  .shrink-left {
+    float: left;
+    margin-right: 1rem;
+  }
+
+  // The div to that will be stretched to take up all remaining space
+  .stretch-div {
+    overflow: hidden;
+  }
+}
+
+/* ----------------------------------------------- */
+
+.panel-info-display {
+  display: block !important;
+}
+
+.inline-panel-info-display {
+  position: initial !important;
+  display: inline-block !important;
+  visibility: visible !important;
+}
+
+// GIF Loader
+.gif-loader{
+  background: asset-url("throbber_small.gif") no-repeat center center;
+  background-size: 16px 16px;
+
+  height: 16px;
+  width: 16px;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+
+  margin: 0 auto 0 auto;  // center horizontally
+
+  z-index: 1000;
+
+  display: none;
+}
+
+// Footer
+#footer small {
+  color: $light-grey;
+}
+
+/* ----------------------------------------------- */
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}

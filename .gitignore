@@ -7,11 +7,37 @@
 # Ignore bundler config.
 /.bundle
 
-# Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-journal
-
 # Ignore all logfiles and tempfiles.
-/log/*
-!/log/.keep
+/log/*.log
+/log/*.log.*
 /tmp
+
+# Ignore application configuration
+config/application.yml
+config/newrelic.yml
+config/database.yml
+config/database_local.yml
+
+
+# Ignore other unneeded files.
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
+.env
+/public/assets
+
+# VS Code related files
+/.vscode
+
+# Ignore directory for ctag
+/tags
+
+# Ignore rvm files
+.ruby-version
+.rvmrc
+
+mkmf.log
